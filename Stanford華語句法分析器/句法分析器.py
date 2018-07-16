@@ -12,6 +12,6 @@ except Warning as 錯誤:
 #print('結果=', 結果)
 
 # 印圖表
-next(
+next(next(
     句法分析器.parse("猴子 喜欢 吃 香蕉 。".split())
-).pretty_print()
+)).pretty_print()
