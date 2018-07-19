@@ -29,3 +29,10 @@ print('該句結果字串=', 該句結果字串)
 #  我   喜欢       猪 
 該句結果字串.pretty_print()
 
+
+##### 樹仔字串提出原始字串
+a = Tree.fromstring("(ROOT (IP (NP (PN 我)) (VP (VV 喜欢) (NP (NN 猪)))))")
+# ['我', '喜欢', '猪']
+print(a.leaves())
+# (ROOT 我 喜欢 猪)
+print(a.flatten())
