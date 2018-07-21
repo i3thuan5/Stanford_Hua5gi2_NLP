@@ -4,9 +4,9 @@ from nltk.tree import Tree
 
 
 # 句法分析
-def 提華語句法樹(bunji="我 喜歡 豬"):
+def 提華語句法樹(bunji="我 喜歡 豬", url='http://localhost:9000'):
     try:
-        句法分析器 = CoreNLPParser()
+        句法分析器 = CoreNLPParser(url=url)
     except Warning as 錯誤:
         print('Warning=', 錯誤)
     
